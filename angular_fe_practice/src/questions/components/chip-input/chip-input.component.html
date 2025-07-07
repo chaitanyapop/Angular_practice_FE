@@ -1,0 +1,17 @@
+<div class="chip-input-container">
+  <div class="chip-input">
+    <p>Chips Input</p>
+    <input
+      placeholder="Type a chip and press enter"
+      [(ngModel)]="chips"
+      (keydown.enter)="addChip()"
+      class="input-field"
+    />
+  </div>
+  <div class="chips-list">
+    <span *ngFor="let chip of chipsList" class="chip">
+      <span>{{ chip }}</span>
+      <span (click)="removeChip(chip)" class="cross-symbol">X</span>
+    </span>
+  </div>
+</div>
