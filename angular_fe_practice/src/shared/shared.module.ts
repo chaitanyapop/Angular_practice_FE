@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RecipeTileComponent } from './component/recipe-tile/recipe-tile.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    RecipeTileComponent
+  ],
   imports: [
     CommonModule
   ]

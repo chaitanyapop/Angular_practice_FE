@@ -1,0 +1,62 @@
+[
+  {
+    "image": "",
+    "dishName": "Vegetable stir fry",
+    "cuisine": "Asian",
+    "rating": "4.5"
+  },
+  {
+    "image": "",
+    "dishName": "Bhindi fry",
+    "cuisine": "Indian",
+    "rating": "4.2"
+  },
+  {
+    "image": "",
+    "dishName": "Paneer Biryani",
+    "cuisine": "Asian",
+    "rating": "4.7"
+  },
+  {
+    "image": "",
+    "dishName": "Pasta",
+    "cuisine": "Europe",
+    "rating": "4.2"
+  },
+  {
+    "image": "",
+    "dishName": "Noodles",
+    "cuisine": "Chinese",
+    "rating": "4.8"
+  },
+  {
+    "image": "",
+    "dishName": "Fried rice",
+    "cuisine": "Chinese",
+    "rating": "4.5"
+  },
+  {
+    "image": "",
+    "dishName": "Panner chilly",
+    "cuisine": "Chinese",
+    "rating": "4.2"
+  },
+  {
+    "image": "",
+    "dishName": "Pizza",
+    "cuisine": "Italian",
+    "rating": "4.7"
+  },
+  {
+    "image": "",
+    "dishName": "Burger",
+    "cuisine": "American",
+    "rating": "4.7"
+  },
+  {
+    "image": "",
+    "dishName": "Salad",
+    "cuisine": "Indian",
+    "rating": "4.5"
+  }
+]

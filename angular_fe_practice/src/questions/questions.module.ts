@@ -5,10 +5,16 @@ import { QuestionsRoutingModule } from './questions-routing.module';
 import { ChipInputComponent } from './components/chip-input/chip-input.component';
 import { FormsModule } from '@angular/forms';
 import { RecipeComponent } from './components/recipe/recipe.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [ChipInputComponent, RecipeComponent],
-  imports: [CommonModule, QuestionsRoutingModule, FormsModule],
-  exports: [ChipInputComponent],
+  imports: [
+    CommonModule,
+    QuestionsRoutingModule,
+    FormsModule,
+    HttpClientModule,
+  ],
+  exports: [ChipInputComponent, RecipeComponent],
 })
 export class QuestionsModule {}
