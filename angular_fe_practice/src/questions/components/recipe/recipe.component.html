@@ -6,8 +6,8 @@
     <div class="filter_addCart_container">
       <span>
         <span>Filter by Rating:</span>
-        <select>
-          <option>4.0+</option>
+        <select (change)="filterSelected($event)">
+          <option selected>4.0+</option>
           <option>4.3+</option>
           <option>4.5+</option>
           <option>4.7+</option>
@@ -15,16 +15,17 @@
         </select>
       </span>
       <span>
-        <span>Cart items: 0</span>
+        <span>Cart items: {{ cartItems }}</span>
       </span>
     </div>
     <div class="average_container">
-      <h3>Average rating: 4.67 (3 recipe)</h3>
+      <h3>Average rating: {{ average }} ({{ displayed_receipe }} recipe)</h3>
     </div>
     <div class="recipe_tile_container" *ngIf="recipeData">
       <app-recipe-tile
         *ngFor="let item of recipeData"
         [recipeData]="item"
+        (addToCartEvent)="addToCart($event)"
       ></app-recipe-tile>
     </div>
   </div>

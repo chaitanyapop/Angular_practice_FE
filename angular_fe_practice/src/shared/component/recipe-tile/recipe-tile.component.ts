@@ -1,4 +1,10 @@
-import { Component, Input, SimpleChanges } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  Output,
+  SimpleChanges,
+} from '@angular/core';
 
 @Component({
   selector: 'app-recipe-tile',
@@ -8,4 +14,9 @@ import { Component, Input, SimpleChanges } from '@angular/core';
 })
 export class RecipeTileComponent {
   @Input() recipeData!: any;
+  @Output() addToCartEvent = new EventEmitter();
+
+  addToCart(data: any) {
+    this.addToCartEvent.emit(data);
+  }
 }

@@ -5,5 +5,7 @@
   <span class="review_info"
     >Rating: {{ recipeData.rating }} ({{ recipeData.reviews }} reviews)</span
   >
-  <button class="add_to_cart_button">Add to cart</button>
+  <button class="add_to_cart_button" (click)="addToCart(recipeData)">
+    Add to cart
+  </button>
 </div>
