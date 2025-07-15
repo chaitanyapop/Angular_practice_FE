@@ -6,6 +6,7 @@ import { ChipInputComponent } from './components/chip-input/chip-input.component
 import { FormsModule } from '@angular/forms';
 import { RecipeComponent } from './components/recipe/recipe.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [ChipInputComponent, RecipeComponent],
@@ -14,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
     QuestionsRoutingModule,
     FormsModule,
     HttpClientModule,
+    SharedModule,
   ],
   exports: [ChipInputComponent, RecipeComponent],
 })

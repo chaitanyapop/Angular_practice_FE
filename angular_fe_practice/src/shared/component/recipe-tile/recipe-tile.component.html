@@ -1,1 +1,9 @@
-<p>recipe-tile works!</p>
+<div class="tile_container">
+  <img class="dish_image" [src]="recipeData.image" />
+  <h3>{{ recipeData.dishName }}</h3>
+  <span class="cusine_innfo">Cusine: {{ recipeData.cuisine }}</span>
+  <span class="review_info"
+    >Rating: {{ recipeData.rating }} ({{ recipeData.reviews }} reviews)</span
+  >
+  <button class="add_to_cart_button">Add to cart</button>
+</div>

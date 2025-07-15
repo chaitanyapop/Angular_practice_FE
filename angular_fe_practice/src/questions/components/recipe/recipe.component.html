@@ -21,8 +21,11 @@
     <div class="average_container">
       <h3>Average rating: 4.67 (3 recipe)</h3>
     </div>
-    <div class="recipe_tile_container">
-      <app-recipe></app-recipe>
+    <div class="recipe_tile_container" *ngIf="recipeData">
+      <app-recipe-tile
+        *ngFor="let item of recipeData"
+        [recipeData]="item"
+      ></app-recipe-tile>
     </div>
   </div>
 </div>
