@@ -7,9 +7,10 @@ import { FormsModule } from '@angular/forms';
 import { RecipeComponent } from './components/recipe/recipe.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from '../shared/shared.module';
+import { TabSwitchComponent } from './components/tab-switch/tab-switch/tab-switch.component';
 
 @NgModule({
-  declarations: [ChipInputComponent, RecipeComponent],
+  declarations: [ChipInputComponent, RecipeComponent, TabSwitchComponent],
   imports: [
     CommonModule,
     QuestionsRoutingModule,
@@ -17,6 +18,6 @@ import { SharedModule } from '../shared/shared.module';
     HttpClientModule,
     SharedModule,
   ],
-  exports: [ChipInputComponent, RecipeComponent],
+  exports: [ChipInputComponent, RecipeComponent, TabSwitchComponent],
 })
 export class QuestionsModule {}

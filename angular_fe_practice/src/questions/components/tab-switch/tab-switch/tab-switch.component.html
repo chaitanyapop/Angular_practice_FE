@@ -1,0 +1,17 @@
+<div class="tab-switch-container">
+  <h2>Tab switcher</h2>
+  <div class="tabs">
+    <button
+      (click)="tabSwitchController(item)"
+      *ngFor="let item of tabSwitchArray"
+      [ngClass]="
+        item.label === selectedTab.label ? 'active-button' : 'inactive-button'
+      "
+    >
+      {{ item.label }}
+    </button>
+  </div>
+  <div class="content">
+    <ng-container *ngComponentOutlet="selectedTab.content"></ng-container>
+  </div>
+</div>

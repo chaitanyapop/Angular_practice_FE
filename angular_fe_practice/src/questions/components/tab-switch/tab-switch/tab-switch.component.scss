@@ -1,0 +1,17 @@
+.tab-switch-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid red;
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+
+    .active-button {
+      border: 2px solid green;
+      background-color: green;
+    }
+    .inactive-button {
+    }
+  }
+}
